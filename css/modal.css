@@ -1,0 +1,149 @@
+/************************************ INICIO MODAL **************************/
+#btnAbrirModal{
+    margin-bottom: 2rem;
+}
+
+/* #imagenPersonaje{
+    display: flex;
+    flex-direction: column;
+    align-tarjetas: center;
+    
+
+} */
+
+.opcion-btn {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.preguntaGeneral{
+   background-color: rgb(124, 107, 184);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.alternativas{
+    display: block; /* Para que cada opción esté en una línea nueva */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+}
+
+.modal-overlay{
+    background:rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* centra el contenido */
+    justify-content: center;
+    align-tarjetas: center;
+    font-size: 2px;
+    opacity: 0;
+    /* invisible al inicio */
+    transition: opacity 0.3s ease;
+    /* animación de aparición suave */
+}
+
+.modal-overlay p{
+    font-size: 5px;
+}
+
+/* Oculta completamente el modal del flujo visual */
+.hidden {
+    display: none;
+}
+
+/* Clase que muestra el modal (se aplica al abrirlo) */
+.modal-overlay.show {
+    opacity: 1;
+    /* visible */
+}
+
+/* Cuadro blanco del modal o contenido del modal */
+.modal-box {
+    background-color: #bfbfb7;
+    width: 90%;
+    max-width: 600px;
+    /* tamaño máximo en pantallas grandes */
+    position: relative;
+    padding: 1.5rem;
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 10px;
+    /* sombra flotante */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+   
+}
+
+#cerrarInformacionModal{
+    background-color: #329457; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.info{
+    background-color: firebrick;
+}
+.modal-box p{
+    font-size: 20px;
+}
+
+/* "X" */
+.cerrarModal {
+    font-size: 1rem;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* se hace el efecto al pasar el mouse */
+.cerrarModal:hover {
+    transform: scale(1.2);
+}
+
+/* Imagen dentro del modal */
+.modal-box img {
+    width: 20rem;
+    object-fit: cover;
+    
+}
+
+.tamaño{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+#historiaOcultaPersonaje{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/************************************ FIN MODAL **************************/
+
+/************************************* INICIO DE OPCIONES (4)******************
+

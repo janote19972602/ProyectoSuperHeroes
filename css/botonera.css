@@ -1,0 +1,23 @@
+/* //MENU CON LOS 3 BOTONES*/
+.BotonesMostrarDerecha{
+    display: flex;
+    margin-right: 100px;
+}
+
+
+.BotonesMostrarDerecha button{
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Espacio entre botones */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.BotonesMostrarDerecha button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+}
+

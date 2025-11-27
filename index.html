@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/botonera.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+    <script type="module" src="js/app.js"></script>
+    <title>Lista de Super héroes y Villanos</title>
+</head>
+<body>
+    
+    <div id="contenedor" class="contenedor-principal">
+        <div id="contenedorTitulosEncabezado" class="titulos"></div>
+        <!-- SE TIENE LOS 3 BOTONES Y EL BUSCADOR -->
+        <div class="buscadorYBotones">
+            <div class="inputBuscarIzquierda">
+                <input id="inputBuscar" class="buscar-input" type="text">
+                <p>Buscar</p>
+            </div>
+            <div class="BotonesMostrarDerecha">
+                <button id="btnVillanos" class="mostrar-boton">Villanos</button>
+                <button id="btnHeroes" class="mostrar-boton">Héroes</button>
+                <button id="btnTodos" class="mostrar-boton">Todos</button>
+                <!-- <button type="button" class="btn btn-dantger">Botón de Peligro</button> -->
+
+                <button id="btnMostrarFavoritos" class="mostrar-boton">MostrarFavoritos</button>
+            </div>
+        </div>
+        
+        <div id="mensaje"></div>
+        <div id="grillaSuperHeroesYVillanos" class="grillaMultiverso"></div>
+        
+    </div>
+
+    <!-- INICIO MODAL -->
+     <!-- Este div tiene un id y una clase las cuales se encargan de armar toda la magia -->
+         <div id="modal" class="modal-overlay hidden"><!--PADRE DEL 'modal-box'-->
+            <div class="modal-box"><!--hijo del 'modal-overlay' y padre del button, img y 2 p-->
+                <button class="cerrarModal">X</button>
+                <!-- lo que contiene el div modal -->
+                <img id="imagenPersonaje" src="" alt="">
+                <div class="tamaño">
+                    <p id="nombrePersonaje"></p>
+                    <p id="poderPersonaje"></p>
+                    <p id="descripcionPersonaje"></p>
+                </div>
+                <button id="cerrarInformacionModal">Cerrar</button> 
+                <div class="accordion" id="accordionExample">
+  <div class="accordion-tarjeta">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion tarjeta #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first tarjeta’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-tarjeta">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion tarjeta #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second tarjeta’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-tarjeta">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion tarjeta #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third tarjeta’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+                <div id="historiaOcultaPersonaje"></div>
+                <div id="alternativas"></div>
+            </div>
+         </div>   
+    <!-- TERMINO MODAL -->
+
+
+
+    <!-- LOADER INICIO -->
+        <div id="cargador" class="loader-content">
+            <div class="spinner"></div>
+            <div class="loader-text">Cargando...</div>     
+        </div>
+    <!-- LOADER FIN -->
+
+</body>
+</html>

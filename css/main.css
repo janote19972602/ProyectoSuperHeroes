@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+transition tiene 3 valores. 
+1 a que funcion quiero aplicarle
+2 la duracion de la transformacion del efecto la duraciob debe ir en segundos (s)
+3 el tipo de funcion en este caso ease es despacio */
+
+/* //MENU CON EL INPUT un p que diga "buscar" */
+.buscadorYBotones{
+    display: flex; /* Usa Flexbox para alinear los elementos en fila */
+    justify-content: space-between; /* Separa el contenido a la izquierda y a la derecha */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados con 8px */
+    font-family: 'Arial', sans-serif; /* Fuente */
+    margin: 0 auto;
+}
+
+
+/* //INPUT BUSCAR*/
+.inputBuscarIzquierda{
+    display: flex;
+    align-items: end;
+}
+
+.inputBuscarIzquierda p {
+  margin: 0 10px 0 0; /* Margen a la derecha del texto "Buscar" */
+  font-weight: bold; /* Texto en negrita */
+  color: #333;
+}
+
+.mostrar{
+    background-color: #329457; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Espacio entre botones */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+
+}
+
+/* ESTA ES LA GRILLA QUE CONTIENE TODO */
+#grillaSuperHeroesYVillanos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));  /* Ajusta el tamaño de las columnas dinámicamente */
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(131, 240, 143);
+    /* background-color: #00FFFF; */
+    /* transition: transform 0.1s ease;
+    background-repeat: no-repeat; */
+}
+
+#grillaSuperHeroesYVillanos img{
+    width: 100%; /* La imagen ocupa todo el ancho de su celda */
+    height: 70%; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la proporción y llena el contenedor */
+}
+
+/* AQUI SE ESTABLECEN REGLAS CSS PARA LA INFO DEL PERSONAJE DENTRO DEL DIV Y HERMANO DE LA IMAGEN */
+.informacion-personaje {
+    height: 30%;
+    display: flex; /* Habilita el modelo de caja flexible */
+    flex-direction: column; /* Apila los elementos uno encima del otro */   
+}
+
+.tituloSubtitulo{
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    align-items: center;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 2em; /* Tamaño de fuente para el h1 */
+    color: #399797; /* Cian */
+    text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Efecto de sombra luminosa */
+}
+
+/* La propiedad CSS text-shadow sirve para agregar sombras al texto de manera sencilla directamente en el navegador.
+ Permite especificar los desplazamientos horizontal y vertical, el radio de desenfoque y el color de la sombra. 
+ Se puede utilizar para crear efectos de diseño como un relieve o una sombra básica sin necesidad de usar 
+ programas de edición de imágenes, además de ser animable.  */
+
+.subtitulo {
+  font-size: 1.5em; /* Tamaño de fuente para el h2 */
+  color: #a0a0a0; /* Gris para el subtítulo */
+}
+
+#contenedorTitulosEncabezado{
+  display: grid; 
+  grid-template-columns: 1fr; /*una sola columna para ambos titulos */
+  gap: 50px; /* Espacio entre los elementos */
+  text-align: center; /* Centra el contenido */
+}
+
+/* se le aplica un resplandor rojo a la tarjeta/div card */
+.resplandorRojo {
+  box-shadow: 0 0 30px red; 
+}
+
+/* se le aplica un resplandor azul a la tarjeta/div card */
+.resplandorAzul {
+  box-shadow: 0 0 30px blue; 
+}
+
+/* se le aplica un color de fondo azul a los personajes de marvel */
+.colorDeFondomarvel {
+  background-color: #2b55d3;
+  color: #fff;
+}
+
+/* se le aplica un color de fondo rojo a los personajes de marvel */
+.colorDeFondoDC{
+    background-color: rgb(206, 17, 17);
+    color: #ebdddd;
+}
+
+/* se le aplica un color rojo a los personajes de dc */
+/* repeat(): Función que repite una lista de valores de 
+tamaño para crear múltiples columnas o filas. */
+
+#inputBuscar{
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: Arial, sans-serif; /* Familia de fuente */
+    width: 200px; /* Ancho del input */
+    margin-left: 100px;
+}
+
+.btnEstrella{
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 20px; /* Ajusta el tamaño */
+  width: 30px;     /* Ajusta el ancho del botón */
+  height: 30px;    /* Ajusta el alto del botón */
+  cursor: pointer; /* raton */
+}
+
+.iconoDeEstrella{
+  font-size: 30px;
+  cursor: pointer; /* raton */
+  text-align: center;
+}
+
+#mensaje{
+  display: block; /* Muestra el mensaje */
+  font-size: 30px; /* Tamaño de fuente grande */
+  font-weight: bolder;
+  color: #fff; /* Color del texto (puedes cambiarlo) */
+  margin-top: 10px; /* Espacio superior */
+  width: 100%;
+  background-color: red;
+  text-align: center;
+}
+
+
+
+/*/********************************************************************** MEDIA QUERYS ************************************************************/ 
+
+/* PARA CELULAR */
+@media screen and (max-width:600px){
+
+    #grillaSuperHeroesYVillanos img{
+        height: 520px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .tarjeta{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+/* PARA TABLET */
+@media screen and (min-width:601px) and (max-width:1024px) {
+
+     #grillaSuperHeroesYVillanos img{
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .tarjeta{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+
+
+
+ 

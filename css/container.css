@@ -1,0 +1,18 @@
+.contenedor-principal{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(131, 240, 143);
+    display: none;
+}
+
+.contenedor-principal .tarjeta{
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3 ease;
+    /* background-color: saddlebrown; */
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden; /* evita que la imagen se salga */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
