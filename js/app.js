@@ -4,8 +4,6 @@ let favoritos = [];
 
 window.onload = () => {
 
-    
-    
     //cargarDatos();
     mostrarTodos();
 
@@ -137,10 +135,6 @@ window.onload = () => {
         mostrarVillanosYSuperHeroes(filtrados);
 
     })
-
-   
-
-
 };
 
 function mostrarTituloYSubtitulo() {
@@ -266,9 +260,6 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
                 //creacion del contenido del modal llamadas por id desde el html
                 const modal = document.getElementById('modal');
                 abrirModal(modal);
-
-                
-               
                 //inicio de 4 valores que son llamados por id y mostrados por el modal
                 const imgPersonaje = document.getElementById('imagenPersonaje');
                 imgPersonaje.src = personaje.img;
