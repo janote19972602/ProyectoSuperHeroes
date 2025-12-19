@@ -5,7 +5,7 @@ export const multiverso = [
         universo: 'Marvel', 
         tipo: 'Héroe', 
         poder: 'Armadura tecnológica', 
-        nivel: 9,
+        nivel: 4,
         img: 'img/ironman.jpg',
         descripcion:'Super inteligente, armaduras de lo mas cool y puro éxito',
         historiaOculta: 
@@ -18,7 +18,7 @@ export const multiverso = [
                            'Demostrar superioridad tecnológica'
                           ],
             respuestaCorrecta: 'Salvar vidas luego de su secuestro',
-            descripcionHistoriaOculta: 'Iron man en su infancia era gay'
+            descripcionHistoriaOculta: 'Tony Stark, un genio multimillonario y filántropo, es secuestrado y forzado a construir armas. En cautiverio, utiliza su inteligencia para crear una armadura de alta tecnología y escapar. De regreso, se da cuenta de un complot global y jura proteger al mundo como Iron Man, utilizando su armadura para combatir el mal'
         }
     },
     {
@@ -27,7 +27,7 @@ export const multiverso = [
         universo: 'DC',
         tipo: 'Héroe',
         poder: 'Estratega e inteligencia superior', 
-        nivel: 8,
+        nivel: 2,
         img: 'img/batman.jpg',
         descripcion:'un millonario que se dedica a combatir el crimen en Gotham City sin tener superpoderes, basándose en su intelecto, destreza física, entrenamiento de élite y tecnología avanzada',
         historiaOculta: 
@@ -39,7 +39,8 @@ export const multiverso = [
                            'Joker',
                            'Clark Kent'
                           ],
-            respuestaCorrecta: 'Bruce Wayne'
+            respuestaCorrecta: 'Bruce Wayne',
+            descripcionHistoriaOculta: 'Tony Stark, un genio multimillonario y filántropo, es secuestrado y forzado a construir armas. En cautiverio, utiliza su inteligencia para crear una armadura de alta tecnología y escapar. De regreso, se da cuenta de un complot global y jura proteger al mundo como Iron Man, utilizando su armadura para combatir el mal'
         }
     },
     {
@@ -60,8 +61,8 @@ export const multiverso = [
                            'Darkseid:',
                            'Arale'
                           ],
-            respuestaCorrecta: 'Salvar vidas luego de su secuestro',
-            descripcionHistoriaOculta: 'Iron man en su infancia era gay'
+            respuestaCorrecta: 'Lex Luthor',
+            descripcionHistoriaOculta: 'fue enviado a la Tierra en una nave espacial momentos antes de que su planeta explotara. Fue encontrado y adoptado por los granjeros Jonathan y Martha Kent en Smallville, quienes lo criaron como Clark Kent. '
         }
     },
     {
@@ -72,7 +73,7 @@ export const multiverso = [
         poder: 'Fuerza divina y lazo de la verdad', 
         nivel: 9, 
         img: 'img/mujerMaravillaa.png',
-        descripcion:' princesa guerrera amazona de la isla de Themyscira con superfuerza, velocidad y resistencia sobrehumanas',
+        descripcion:' princesa guerrera amazona con superfuerza, velocidad y resistencia sobrehumanas.',
         historiaOculta: 
         {
             pregunta: '¿Cuál es el nombre de su isla? ',
@@ -82,7 +83,8 @@ export const multiverso = [
                            'Themyscira',
                            'Rapa Nui'
                           ],
-            respuestaCorrecta: 'Themyscira'
+            respuestaCorrecta: 'Themyscira',
+            descripcionHistoriaOculta: 'Es una princesa amazona que, tras encontrar al piloto estadounidense Steve Trevor, sale de su isla para ayudar al mundo exterior'
         }
     },
     {
@@ -93,7 +95,7 @@ export const multiverso = [
         poder: 'Dios del trueno y del rayo', 
         nivel: 10, 
         img: 'img/Thor-6-1-712x1024.png',
-        descripcion:'dios nórdico del trueno y la tormenta, hijo de Odín, conocido por su inmensa fuerza, coraje y su martillo Mjölnir',
+        descripcion:'Dios nórdico del trueno y la tormenta, hijo de Odín, conocido por su inmensa fuerza, coraje y su martillo Mjölnir',
         historiaOculta: 
         {
             pregunta: '¿En que pelicula Thor pierde un ojo?',
@@ -103,9 +105,9 @@ export const multiverso = [
                            'Los Vengadores',
                            'Avengers: era de Ultrón'
                           ],
-            respuestaCorrecta: 'Thor: Ragnarok'
+            respuestaCorrecta: 'Thor: Ragnarok',
+            descripcionHistoriaOculta: 'Thor, el Dios nórdico del trueno e hijo de Odín, es un poderoso guerrero conocido por su martillo Mjølner. En la mitología, lucha contra el mal y protege a la humanidad de las fuerzas del cao'
         }
-
     },
     {
         id:6,
@@ -115,19 +117,19 @@ export const multiverso = [
         poder: 'Magia y engaño', 
         nivel: 8, 
         img: 'img/lokii.png',
-        descripcion:'dios nórdico de la travesura, astuto, engañoso y con la capacidad de cambiar de forma',
+        descripcion:'Dios nórdico de la travesura, astuto, engañoso y con la capacidad de cambiar de forma',
         historiaOculta: 
         {
             pregunta: '¿A quién controló la mente en los vengadores?',
             alternativas: [
-                           'Ojo de Halcón(Hawkeye)',
+                           'Hawkeye',
                            'Iron-man',
                            'Hulk',
                            'Capitán America'
                           ],
-            respuestaCorrecta: 'Ojo de Halcón(Hawkeye)'
+            respuestaCorrecta: 'Hawkeye',
+            descripcionHistoriaOculta: 'Loki nació como hijo del gigante Fárbauti y la diosa Laufey en Jotunheim. Tras la muerte de su padre, Odín lo encontró y lo crió junto a su hijo biológico, Thor, en Asgard.'
         }
-
     },
     {
         id:7,
@@ -137,7 +139,7 @@ export const multiverso = [
         poder: 'Guantelete del Infinito', 
         nivel: 10, 
         img: 'img/thanos-24-931x1024.png',
-        descripcion:'Es un supervillano formidable de la raza de los Eternos, caracterizado por su inmenso poder, inteligencia y su obsesión con la muerte',
+        descripcion:'Supervillano formidable de la raza de los Eternos, caracterizado por su inmenso poder, inteligencia y su obsesión con la muerte',
         historiaOculta: 
         {
             pregunta: '¿Cuál es el planeta natal de Thanos?',
@@ -147,9 +149,9 @@ export const multiverso = [
                            'Tierra',
                            'Titán'
                           ],
-            respuestaCorrecta: 'Titán'
+            respuestaCorrecta: 'Titán',
+            descripcionHistoriaOculta: 'Thanos nació en Titán, la luna de Saturno, como parte de la raza de los Eternos. Desde joven, se sintió atraído por la muerte y las artes oscuras, hasta el punto de viviseccionar a su propia madre para comprender su propia naturaleza'
         }
-
     },
     {
         id:8,
@@ -159,7 +161,7 @@ export const multiverso = [
         poder: 'Agilidad y locura', 
         nivel: 7, 
         img: 'img/h.png',
-        descripcion:'supervillana y anti-heroína de DC Comics, originalmente la psiquiatra Harleen Quinzel, que se enamora del Joker y se convierte en su cómplice',
+        descripcion:'Supervillana y anti-heroína de DC Comics, originalmente la psiquiatra Harleen Quinzel, que se enamora del Joker y se convierte en su cómplice',
         historiaOculta: 
         {
             pregunta: '¿Cuál es la profesión original de Harley Quinn antes de convertirse en villana?',
@@ -169,9 +171,9 @@ export const multiverso = [
                            'Cantante',
                            'Investigadora de la policía'
                           ],
-            respuestaCorrecta: 'psiquiatra'
+            respuestaCorrecta: 'psiquiatra',
+            descripcionHistoriaOculta: 'Harley Quinn era la psiquiatra Harleen Quinzel en el Asilo Arkham, hasta que se enamoró del Joker, quien la manipuló para que lo ayudara a escapar. Tras esto, se convirtió en su cómplice villana, adoptando el nombre de Harley Quinn'
         }
-
     },
     {
         id:9,
@@ -191,9 +193,9 @@ export const multiverso = [
                            'Bane',
                            'El Acertijo'
                           ],
-            respuestaCorrecta: 'Batman'
+            respuestaCorrecta: 'Batman',
+            descripcionHistoriaOculta: 'El Joker es un psicópata anarquista que, en vez de buscar una vida, se dedica a sembrar el caos en la ciudad de Gotham y a arrastrar a Batman a cruzar la línea de héroe a vigilante'
         }
-
     },
     {
         id:10,
@@ -203,7 +205,7 @@ export const multiverso = [
         poder: 'Sentido arácnido', 
         nivel: 8, 
         img: 'img/spi.png',
-        descripcion:'Un adolescente torpe y brillante que obtiene superpoderes arácnidos tras ser mordido por una araña radioactiva',
+        descripcion:'Un adolescente torpe y brillante que obtiene superpoderes arácnidos como caminar por las paredes, equilibrio perfecto tras ser mordido por una araña radioactiva',
         historiaOculta: 
         {
             pregunta: '¿En qué ciudad vive Spider-Man? ',
@@ -213,9 +215,9 @@ export const multiverso = [
                            'San Francisco',
                            'Houston'
                           ],
-            respuestaCorrecta: 'Nueva York'
+            respuestaCorrecta: 'Nueva York',
+            descripcionHistoriaOculta: 'Comienza cuando el adolescente y huérfano Peter Parker es mordido por una araña radioactiva en un laboratorio, lo que le otorga superpoderes'
         }
-
     },
     {
         id:11,
@@ -235,7 +237,8 @@ export const multiverso = [
                            'Atlanna',
                            'Hipólita'
                           ],
-            respuestaCorrecta: 'Atlanna'
+            respuestaCorrecta: 'Atlanna',
+            descripcionHistoriaOculta: 'Arthur Curry es el hijo de una reina atlante y un guardián de faro humano, lo que le dio habilidades sobrehumanas como la resistencia bajo el agua y la comunicación con la vida marina.'
         }
     },
     {
@@ -246,7 +249,7 @@ export const multiverso = [
         poder: 'Regeneración y combate', 
         nivel: 9, 
         img: 'img/deadpool.png',
-        descripcion:'un mercenario con habilidades de regeneración mutantes tras un experimento que también lo desfigura y lo vuelve mentalmente inestable',
+        descripcion:'Un mercenario con habilidades de regeneración mutantes tras un experimento que también lo desfigura y lo vuelve mentalmente inestable',
         historiaOculta: 
         {
             pregunta: '¿Cuál es el nombre real de Deadpool?',
@@ -256,7 +259,8 @@ export const multiverso = [
                            'Matt Murdock',
                            'Wade Wilson'
                           ],
-            respuestaCorrecta:'Wade Wilson'
+            respuestaCorrecta:'Wade Wilson',
+            descripcionHistoriaOculta: 'Es un mercenario con cáncer que se somete a experimentos en el programa Arma X para obtener una cura, pero termina desfigurado y mentalmente inestable debido a los crueles tratamientos y a la activación de sus genes mutantes latentes'
         }
     },
     {
@@ -277,7 +281,8 @@ export const multiverso = [
                            'Clint Barton:',
                            'Steve Rogers'
                           ],
-            respuestaCorrecta:'Bruce Banner'
+            respuestaCorrecta:'Bruce Banner',
+            descripcionHistoriaOculta: 'se centra en su pasado como espía y asesina soviética, entrenada desde niña en la Sala Roja, un programa de la KGB para crear asesinas'
         }
     },
     {
@@ -298,9 +303,9 @@ export const multiverso = [
                            'Brian Banner y Rebeca Banner',
                            'Dexter y Sophie'
                           ],
-            respuestaCorrecta: 'Bryan y María Kyle'
+            respuestaCorrecta: 'Bryan y María Kyle',
+            descripcionHistoriaOculta: 'Es una huérfana que aprende a robar para sobrevivir en las calles de Gotham. Tras ser entrenada en artes marciales, se convierte en una ladrona profesional que se inspira en Batman, adoptando el nombre de Catwoman'
         }
-
     },
     {
         id:15,
@@ -310,7 +315,7 @@ export const multiverso = [
         poder: 'Precisión con el arco', 
         nivel: 7, 
         img: 'img/hawkeye.png',
-        descripcion:'es un arquero y ex-agente de S.H.I.E.L.D. que es miembro de los Vengadores',
+        descripcion:'Es un arquero y ex-agente de S.H.I.E.L.D. que es miembro de los Vengadores',
         historiaOculta: 
         {
             pregunta: '¿Cuantos hijos tiene Hawkeye?',
@@ -320,7 +325,8 @@ export const multiverso = [
                            'No tiene hijos',
                            '2'
                           ],
-            respuestaCorrecta: '3'
+            respuestaCorrecta: '3',
+            descripcionHistoriaOculta: 'Su origen como huérfano entrenado por el villano Espadachín en un circo, su posterior sordera del 80% tras una batalla y su tiempo como justiciero enmascarado llamado Ronin después del Blip.'
         }
     },
     {
@@ -331,7 +337,7 @@ export const multiverso = [
         poder: 'Simbionte y fuerza bruta', 
         nivel: 9, 
         img: 'img/sw.png',
-        descripcion:'es un simbionte alienígena amorfo que necesita un huésped humano para sobrevivir, otorgándole fuerza y agilidad sobrehumanas',
+        descripcion:'Simbionte alienígena amorfo que necesita un huésped humano para sobrevivir, otorgándole fuerza y agilidad sobrehumanas',
         historiaOculta: 
         {
             pregunta: '¿Quien es el archirrival de venom?',
@@ -341,9 +347,9 @@ export const multiverso = [
                            'Spider-Man',
                            'Scream'
                           ],
-            respuestaCorrecta: 'Carnage'
+            respuestaCorrecta: 'Carnage',
+            descripcionHistoriaOculta: 'Comienza con el dios antiguo y malévola, Knull, que creó a los simbiontes como armas de la oscuridad, se volvió corrupto y buscó la venganza'
         }
-
     },
     {
         id:17,
@@ -353,7 +359,7 @@ export const multiverso = [
         poder: 'Anillo de poder', 
         nivel: 8, 
         img: 'img/lintera.png',
-        descripcion:'Es un superhéroe de la editorial DC Comics que, junto a otros miembros del Green Lantern Corps, patrulla el universo como un policía intergaláctico',
+        descripcion:'Es un superhéroe que puede usar su anillo en cualquier cosa y luchar hasta el final',
         historiaOculta: 
         {
             pregunta: '¿Quien le dio el anillo a Green Lantern?',
@@ -363,9 +369,9 @@ export const multiverso = [
                            'Kilowog',
                            'Mogo'
                           ],
-            respuestaCorrecta:'Abin Sur'
+            respuestaCorrecta:'Abin Sur',
+            descripcionHistoriaOculta: 'Es una fuerza policial intergaláctica de DC Comics, que utiliza un anillo de poder recargable para crear construcciones de luz sólida a partir de su imaginación'
         }
-
     },
     {
         id:18,
@@ -375,7 +381,7 @@ export const multiverso = [
         poder: 'Energía cósmica', 
         nivel: 6, 
         img: 'img/CaptainMarvel.jpg',
-        descripcion:'Es una ex piloto de la Fuerza Aérea, se convierte en Capitana Marvel tras ser expuesta a la energía del Teseracto,',
+        descripcion:'Superfuerza, velocidad, resistencia, agilidad y durabilidad sobrehumanas, la capacidad de volar, y puede absorber y proyectar energía',
         historiaOculta: 
         {
             pregunta: '¿Cual es el nombre real ?',
@@ -385,7 +391,8 @@ export const multiverso = [
                            'Jennifer Walters',
                            'Ororo Munroe'
                           ],
-            respuestaCorrecta: 'Carol Danvers'
+            respuestaCorrecta: 'Carol Danvers',
+            descripcionHistoriaOculta: 'Es una ex piloto de la Fuerza Aérea, se convierte en Capitana Marvel tras ser expuesta a la energía del Teseracto,'
         }
     },
     {
@@ -396,17 +403,18 @@ export const multiverso = [
         poder: 'Fuerza divina y magia egipcia', 
         nivel: 9, 
         img: 'img/b.png',
-        descripcion:'Super inteligente, armaduras de lo mas cool y puro éxito',
+        descripcion:'Es un un villano y, en ocasiones, antihéroe, Posee una inmensa fuerza y velocidad, llegando a moverse tan rápido como el rayo',
         historiaOculta: 
         {
-            pregunta: '¿Cuál fue la mayor motivación de Tony Stark para convertirse en Iron Man?',
+            pregunta: '¿Cuantos años tiene?',
             alternativas: [
-                           'Venganza contra los 10 Anillos',
-                           'Salvar vidas luego de su secuestro',
-                           'Conseguir fama internacional',
-                           'Demostrar superioridad tecnológica'
+                           '5.000 años',
+                           '4.600 años',
+                           '1.000 años',
+                           '10.000 años'
                           ],
-            respuestaCorrecta: 'Salvar vidas luego de su secuestro'
+            respuestaCorrecta: '5.000 años',
+            descripcionHistoriaOculta: 'Es la de un antiguo esclavo de Kahndaq que fue elegido por el Mago Shazam para ser su campeón, pero cayó en la corrupción y se convirtió en un tirano'
         }
     },
     {
@@ -417,17 +425,18 @@ export const multiverso = [
         poder: 'Velocidad supersónica', 
         nivel: 3, 
         img: 'img/Flash.jpg',
-        descripcion:'Super inteligente, armaduras de lo mas cool y puro éxito',
+        descripcion:'Famoso por su súper velocidad, que le permite moverse más rápido que la luz, además de tener reflejos sobrehumanos y la capacidad de atravesar la materia sólida',
         historiaOculta: 
         {
-            pregunta: '¿Cuál fue la mayor motivación de Tony Stark para convertirse en Iron Man?',
+            pregunta: '¿Cuál es el verdadero nombre de Flash?',
             alternativas: [
-                           'Venganza contra los 10 Anillos',
-                           'Salvar vidas luego de su secuestro',
-                           'Conseguir fama internacional',
-                           'Demostrar superioridad tecnológica'
+                           'Jason Keenan',
+                           'Walter Brown',
+                           'Barry Allen',
+                           'Clarck Kent'
                           ],
-            respuestaCorrecta: 'Salvar vidas luego de su secuestro'
+            respuestaCorrecta: 'Salvar vidas luego de su secuestro',
+            descripcionHistoriaOculta: ' Un estudiante universitario que obtuvo supervelocidad al inhalar accidentalmente los vapores de un experimento científico'
         }
     }
 ]

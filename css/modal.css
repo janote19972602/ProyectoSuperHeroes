@@ -3,14 +3,6 @@
     margin-bottom: 2rem;
 }
 
-/* #imagenPersonaje{
-    display: flex;
-    flex-direction: column;
-    align-tarjetas: center;
-    
-
-} */
-
 .opcion-btn {
     width: 100%;
     margin: 5px 0;
@@ -21,21 +13,12 @@
 }
 
 .preguntaGeneral{
-   background-color: rgb(124, 107, 184);
+   background-color: rgb(146, 135, 186);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
     margin-top: 5px;
-}
-
-.alternativas{
-    display: block; /* Para que cada opción esté en una línea nueva */
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  
 }
 
 .modal-overlay{
@@ -85,7 +68,8 @@
     /* sombra flotante */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
-   
+    height: max-content;
+    margin-top: 30px;
 }
 
 #cerrarInformacionModal{
@@ -122,17 +106,25 @@
     transform: scale(1.2);
 }
 
-/* Imagen dentro del modal */
+/* Imagen de los superheroes y villanos dentro del modal */
 .modal-box img {
-    width: 20rem;
+    width: 10rem;
     object-fit: cover;
-    
+    margin-left: 150px;
 }
 
 .tamaño{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+/* Selecciona el primer párrafo hijo directo del div */
+.tamaño > p:first-child {
+  font-size: 24px; /* Aumenta el tamaño de la fuente */
+  color: blue;     /* Cambia el color del texto a azul */
+  padding: 10px;    /* Agrega un relleno */
+  text-align: center;
 }
 
 
@@ -142,6 +134,70 @@
     gap: 5px;
 }
 
+.detallesDescripcion {
+    padding: 5px 10px; /* Reduce el padding para achicar el botón */
+    background-color: #329457; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 6px; /* Espacio entre botones */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 13px;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* ACORDEON */
+
+.acordeon {
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.acordeon-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.acordeon-titulo {
+    width: 100%;
+    background-color: #e8e8e8;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s ease;
+    height: 50px;
+}
+
+.acordeon-contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    background-color: #f8f8f8;
+    padding: 0 12px;  
+    /* display: flex;
+    flex-direction: column;  
+    gap: 5px; */
+}
+
+.acordeon-titulo:hover {
+    background-color: #dcdcdc;
+}
+
+.acordeon-contenido p {
+    margin: 12px 0;
+}
+
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
 
 /************************************ FIN MODAL **************************/
 

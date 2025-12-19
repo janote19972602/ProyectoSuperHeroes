@@ -22,8 +22,6 @@ window.onload = () => {
     
     //funcion que crea la grilla de forma dinamica, dependiendo del tipo de arreglo
     const contenedor = document.getElementById('contenedor');
-    console.log(contenedor);
-    
     const cargador = document.getElementById('cargador');
     
     //simularemos que la pagina se demora 3 segundos en cargar
@@ -37,9 +35,6 @@ window.onload = () => {
         cargador.classList.add('loader-ocultar');
         
     }, 1000);
-
-
-
 
     //se va a buscar por ID al html el input y la guardo en una const llamada "buscador"
     const inputBuscadorPersonaje = document.getElementById('inputBuscar');
@@ -135,6 +130,25 @@ window.onload = () => {
         mostrarVillanosYSuperHeroes(filtrados);
 
     })
+
+    //CODIGO ACORDEON, aqui se va a buscar por clase del html, para las clases se ocupa "querySelector"
+    const boton = document.querySelector('.acordeon-titulo');    
+    const contenidoAcordion = document.querySelector('.acordeon-contenido');
+
+    //evento click del boton acordeon
+    boton.addEventListener('click', () =>{
+
+        // Si está abierto → cerrarlo
+        if (contenidoAcordion.style.maxHeight) {
+            contenidoAcordion.style.maxHeight = null;
+        }
+        else {
+            contenidoAcordion.style.maxHeight = null;
+
+            // Abrir este acordeón
+            contenidoAcordion.style.maxHeight = contenidoAcordion.scrollHeight + "px";
+        }
+    })
 };
 
 function mostrarTituloYSubtitulo() {
@@ -180,7 +194,6 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
             divtarjetaPersonaje.classList.add('tarjeta');
 
             divtarjetaPersonaje.addEventListener('mouseenter', () => {
-
             	divtarjetaPersonaje.style.transform = 'scale(1.05)';
 	            divtarjetaPersonaje.style.boxShadow = '0 0 15px white';
             })
@@ -256,7 +269,7 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
             btnModalPersonaje.classList.add('mostrar');
             btnModalPersonaje.textContent = 'Información';
             
-            btnModalPersonaje.addEventListener('click', () =>{
+                btnModalPersonaje.addEventListener('click', () =>{
                 //creacion del contenido del modal llamadas por id desde el html
                 const modal = document.getElementById('modal');
                 abrirModal(modal);
@@ -272,52 +285,68 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
                 pDescripcionDePersonaje.textContent = personaje.descripcion;
                 //fin a 4 valores
 
-                //se va a buscar por id 
-                const divHistoriaOculta = document.getElementById('historiaOcultaPersonaje');
-                divHistoriaOculta.innerHTML = '';
+                //agregar la pregunta como hijo del acordeon contenido
+                const acordeonContenido = document.querySelector('.acordeon-contenido');
 
+                //se crea el mensaje de responder la pregunta
+                const respuesta = document.createElement('p');
+                respuesta.textContent = 'Si quieres ver la historia oculta del personaje responde la siguiente pregunta';
+                
                 //se crea el parrafo con la pregunta 
                 const pregunta = document.createElement('p');
                 pregunta.classList.add('preguntaGeneral');
                 pregunta.textContent = personaje.historiaOculta.pregunta;
-
-                //se agrega como hijo al div
-                divHistoriaOculta.appendChild(pregunta);
-
+               
+                //acordeonContenido.classList.add('acordeonPreguntas');;
+                acordeonContenido.innerHTML = '';//aqui va este mensaje vacio para asi evitar que la pregunta se repita
+                acordeonContenido.appendChild(respuesta);
+                //se agrega como hijo la pregunta que tiene que responder el usuario al 
+                acordeonContenido.appendChild(pregunta);//prepend: método de JavaScript que inserta uno o más nodos o cadenas de texto al principio de un elemento padre
+                
                 //crear un boton por cada alternativa de la historio oculta del personaje
                 personaje.historiaOculta.alternativas.forEach(alternativa =>{
 
                     const botonOpciones = document.createElement('button');
+                    botonOpciones.classList.add('detallesDescripcion');
+                    console.log(botonOpciones);
+                    
                     botonOpciones.textContent = alternativa;
 
+                    //se crea el evento click a los botones de alrernativas
                     botonOpciones.addEventListener('click', (e) =>{
 
-                        const textoBoton = e.target.textContent;
-
+                        console.log("se hizo click");
                         
-                        const descripcion = personaje.historiaOculta.descripcionHistoriaOculta;
-                        const detalles = document.getElementById('detallesDescripcion');
-
-
+                        const textoBoton = e.target.textContent;//indica que se esta presionando
+                        const descripcion = personaje.historiaOculta.descripcionHistoriaOculta;                        
+                        
+                        //si el usyario respondio correctamente
                         if (textoBoton === personaje.historiaOculta.respuestaCorrecta) {
-                            //ahora se debe mostrar la historia oculta del personaje
-                            detalles.textContent = descripcion;
-                        }
-                        else{
                             
-                            detalles.textContent = 'La respuesta es incorrecta no puedes ver la historia oculta del personaje';
+                            console.log("entro al if");
+                            
+                            //ahora se debe mostrar la historia oculta del personaje
+                            //mostrar el p con id texto historia
+                            const phistoriaOculta = document.getElementById('textoHistoria');
+                            console.log(phistoriaOculta);
+                            
+                            phistoriaOculta.classList.remove('ocultar');
+                            phistoriaOculta.classList.add('mostrar');
                         }
-                        
+                        else{}
                     })
-                    divHistoriaOculta.appendChild(botonOpciones);
+                    
+                    //se agrega dinamicamente como hijos los botones alternativas a al acordeon
+                    acordeonContenido.appendChild(botonOpciones);
 
                 })//FIN DEL FOREACH BOTONES DE ALTERNATIVA
-                const pDescripcion = document.createElement('p');
-                pDescripcion.id = 'detallesDescripcion';
-                divHistoriaOculta.appendChild(pDescripcion);
 
-
-
+                //Se crea dinamicamente un p el cual me representa la historia oculta y se lopaso como hijo al acordeon
+                const pHistoriaOculta = document.createElement('p');
+                pHistoriaOculta.id = 'textoHistoria';
+                pHistoriaOculta.classList.add('ocultar');
+                acordeonContenido.appendChild(pHistoriaOculta);
+                pHistoriaOculta.textContent = personaje.historiaOculta.descripcionHistoriaOculta; 
             })
 
             //Agrega el img como hijo al div tarjetaPersonaje
@@ -332,8 +361,6 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
             infoPersonaje.appendChild(pNivelDePersonaje);
             infoPersonaje.appendChild(btnModalPersonaje);
             infoPersonaje.appendChild(icono);
-            
-            
             divtarjetaPersonaje.appendChild(infoPersonaje);
 
             let divGrillaDePeliculasMultiuniverso = document.getElementById('grillaSuperHeroesYVillanos');

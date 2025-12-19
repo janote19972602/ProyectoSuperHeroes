@@ -20,7 +20,6 @@ transition tiene 3 valores.
     margin: 0 auto;
 }
 
-
 /* //INPUT BUSCAR*/
 .inputBuscarIzquierda{
     display: flex;
@@ -43,7 +42,6 @@ transition tiene 3 valores.
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     font-size: 14px;
     transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
-
 }
 
 /* ESTA ES LA GRILLA QUE CONTIENE TODO */
@@ -55,9 +53,6 @@ transition tiene 3 valores.
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: rgb(131, 240, 143);
-    /* background-color: #00FFFF; */
-    /* transition: transform 0.1s ease;
-    background-repeat: no-repeat; */
 }
 
 #grillaSuperHeroesYVillanos img{
@@ -128,7 +123,6 @@ transition tiene 3 valores.
 /* se le aplica un color rojo a los personajes de dc */
 /* repeat(): Función que repite una lista de valores de 
 tamaño para crear múltiples columnas o filas. */
-
 #inputBuscar{
     padding: 10px; /* Relleno interno */
     border: 1px solid #ccc; /* Borde gris claro */
