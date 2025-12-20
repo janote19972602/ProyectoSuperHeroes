@@ -31,7 +31,7 @@
     display: flex;
     /* centra el contenido */
     justify-content: center;
-    align-tarjetas: center;
+    align-items: center;
     font-size: 2px;
     opacity: 0;
     /* invisible al inicio */
@@ -59,6 +59,7 @@
     background-color: #bfbfb7;
     width: 90%;
     max-width: 600px;
+    max-height: 90vh;
     /* tamaño máximo en pantallas grandes */
     position: relative;
     padding: 1.5rem;
@@ -108,9 +109,11 @@
 
 /* Imagen de los superheroes y villanos dentro del modal */
 .modal-box img {
-    width: 10rem;
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
     object-fit: cover;
-    margin-left: 150px;
 }
 
 .tamaño{

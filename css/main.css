@@ -47,7 +47,7 @@ transition tiene 3 valores.
 /* ESTA ES LA GRILLA QUE CONTIENE TODO */
 #grillaSuperHeroesYVillanos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));  /* Ajusta el tamaño de las columnas dinámicamente */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Ajusta el tamaño de las columnas dinámicamente */
     gap: 40px;
     justify-content: center;
     margin-top: 40px;
@@ -168,15 +168,47 @@ tamaño para crear múltiples columnas o filas. */
 @media screen and (max-width:600px){
 
     #grillaSuperHeroesYVillanos img{
-        height: 520px;
+        height: 100px;
         width: 100%;
         object-fit: cover;
+    }
+
+    .modal-box p{
+      font-size: 16px;
+    }
+
+    .acordeon-titulo{
+      font-size: 14px;
+    }
+
+    .mostrar{
+      width: 100%;
+    }
+
+    #inputBuscar{
+      width: 100%;
+      margin-left: 0;
     }
 
     .tarjeta{
         text-align: center;
         font-size: 30px;
     }
+
+    .informacion-personaje h3{
+      font-size: 16px;
+    }
+
+    .informacion-personaje p{
+      font-size: 12px;
+    }
+
+    .informacion-personaje button{
+      font-size: 12px;
+    }
+
+
+
 }
 
 /* PARA TABLET */

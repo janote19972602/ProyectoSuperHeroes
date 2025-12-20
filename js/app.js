@@ -184,10 +184,6 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
 
     arregloPersonajes.forEach(personaje =>{
 
-        //aqui filtro en el arreglo de objetos los personajes que tienen
-        //el nivel mayor o igual a 7
-        if (personaje.nivel >= 7) {
-
             //Crea el div tarjeta
             const divtarjetaPersonaje = document.createElement('div');
             //Agrega clase tarjeta, ya que el css lo requiere para darle estilos.
@@ -322,16 +318,16 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
                         
                         //si el usyario respondio correctamente
                         if (textoBoton === personaje.historiaOculta.respuestaCorrecta) {
-                            
-                            console.log("entro al if");
-                            
-                            //ahora se debe mostrar la historia oculta del personaje
-                            //mostrar el p con id texto historia
-                            const phistoriaOculta = document.getElementById('textoHistoria');
-                            console.log(phistoriaOculta);
-                            
-                            phistoriaOculta.classList.remove('ocultar');
-                            phistoriaOculta.classList.add('mostrar');
+
+                            console.log("el usuario respondió correctamente");
+                            //Se crea dinamicamente un p el cual me representa la historia oculta y se lopaso como hijo al acordeon
+                            const pHistoriaOculta = document.createElement('p');
+                            pHistoriaOculta.id = 'textoHistoria';
+                            pHistoriaOculta.textContent = personaje.historiaOculta.descripcionHistoriaOculta;
+                            pHistoriaOculta.style.marginTop = '10px';
+                            acordeonContenido.appendChild(pHistoriaOculta);
+                            //ajustar nuevamente la altura del acordion 
+                            acordeonContenido.style.maxHeight = acordeonContenido.scrollHeight + 'px';
                         }
                         else{}
                     })
@@ -341,12 +337,7 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
 
                 })//FIN DEL FOREACH BOTONES DE ALTERNATIVA
 
-                //Se crea dinamicamente un p el cual me representa la historia oculta y se lopaso como hijo al acordeon
-                const pHistoriaOculta = document.createElement('p');
-                pHistoriaOculta.id = 'textoHistoria';
-                pHistoriaOculta.classList.add('ocultar');
-                acordeonContenido.appendChild(pHistoriaOculta);
-                pHistoriaOculta.textContent = personaje.historiaOculta.descripcionHistoriaOculta; 
+                 
             })
 
             //Agrega el img como hijo al div tarjetaPersonaje
@@ -375,7 +366,7 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
             }            
             divGrillaDePeliculasMultiuniverso.appendChild(divtarjetaPersonaje);
                 
-        }//cierre del if
+     
 
     })//cierre foreach
 }
