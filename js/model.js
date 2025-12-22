@@ -6,7 +6,7 @@ export const multiverso = [
         tipo: 'Héroe', 
         poder: 'Armadura tecnológica', 
         nivel: 4,
-        img: 'img/ironman.jpg',
+        img: 'img/ironman2.png',
         descripcion:'Super inteligente, armaduras de lo mas cool y puro éxito',
         historiaOculta: 
         {

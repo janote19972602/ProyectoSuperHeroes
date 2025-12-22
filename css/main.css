@@ -58,7 +58,7 @@ transition tiene 3 valores.
 #grillaSuperHeroesYVillanos img{
     width: 100%; /* La imagen ocupa todo el ancho de su celda */
     aspect-ratio: 3 / 4;
-    object-fit: cover; /* Mantiene la proporción y llena el contenedor */
+    object-fit: fill; /* Mantiene la proporción y llena el contenedor */
 }
 
 /* AQUI SE ESTABLECEN REGLAS CSS PARA LA INFO DEL PERSONAJE DENTRO DEL DIV Y HERMANO DE LA IMAGEN */
@@ -167,9 +167,9 @@ tamaño para crear múltiples columnas o filas. */
 /* PARA CELULAR */
 @media screen and (max-width:600px){
 
-    #grillaSuperHeroesYVillanos img{height: 100px;
+    #grillaSuperHeroesYVillanos img{
         width: 100%;
-        object-fit: cover;
+        object-fit: fill;
         aspect-ratio: 3 / 4;
     }
 
