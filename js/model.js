@@ -28,7 +28,7 @@ export const multiverso = [
         tipo: 'Héroe',
         poder: 'Estratega e inteligencia superior', 
         nivel: 2,
-        img: 'img/batman.jpg',
+        img: 'img/batman.png',
         descripcion:'un millonario que se dedica a combatir el crimen en Gotham City sin tener superpoderes, basándose en su intelecto, destreza física, entrenamiento de élite y tecnología avanzada',
         historiaOculta: 
         {

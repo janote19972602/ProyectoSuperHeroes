@@ -207,6 +207,13 @@ tamaño para crear múltiples columnas o filas. */
       font-size: 12px;
     }
 
+    .BotonesMostrarDerecha{
+      display: flex;
+      flex-direction: column;
+      background-color: firebrick;
+      font-size: 50px;
+    }
+
 
 
 }
