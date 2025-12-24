@@ -271,7 +271,8 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
                 abrirModal(modal);
                 //inicio de 4 valores que son llamados por id y mostrados por el modal
                 const imgPersonaje = document.getElementById('imagenPersonaje');
-                imgPersonaje.src = personaje.img;
+                imgPersonaje.src = personaje.imgModal;
+                
                 const nombrePersonaje = document.getElementById('nombrePersonaje');
                 nombrePersonaje.textContent = personaje.nombre;
 
@@ -302,20 +303,18 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
                 //crear un boton por cada alternativa de la historio oculta del personaje
                 personaje.historiaOculta.alternativas.forEach(alternativa =>{
 
-                    const botonOpciones = document.createElement('button');
-                    botonOpciones.classList.add('detallesDescripcion');
-                    console.log(botonOpciones);
-                    
-                    botonOpciones.textContent = alternativa;
+                    const botonOpciones = document.createElement('div');
+                    botonOpciones.classList.add('detallesDescripcion');  
+
+                    const li = document.createElement('li');                 
+                    li.textContent = alternativa;
 
                     //se crea el evento click a los botones de alrernativas
                     botonOpciones.addEventListener('click', (e) =>{
-
                         console.log("se hizo click");
-                        
                         const textoBoton = e.target.textContent;//indica que se esta presionando
                         const descripcion = personaje.historiaOculta.descripcionHistoriaOculta;                        
-                        
+
                         //si el usyario respondio correctamente
                         if (textoBoton === personaje.historiaOculta.respuestaCorrecta) {
 
@@ -334,6 +333,9 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
                     
                     //se agrega dinamicamente como hijos los botones alternativas a al acordeon
                     acordeonContenido.appendChild(botonOpciones);
+                    botonOpciones.appendChild(li);
+                    
+
 
                 })//FIN DEL FOREACH BOTONES DE ALTERNATIVA
 

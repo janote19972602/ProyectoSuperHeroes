@@ -1,9 +1,10 @@
 /* //MENU CON LOS 3 BOTONES*/
 .BotonesMostrarDerecha{
     display: flex;
-    margin-right: 100px;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0;
 }
-
 
 .BotonesMostrarDerecha button{
     background-color: #007bff; /* Color de fondo azul */
@@ -21,3 +22,28 @@
   background-color: #0056b3; /* Color más oscuro al pasar el ratón */
 }
 
+/* 
+transition tiene 3 valores. 
+1 a que funcion quiero aplicarle
+2 la duracion de la transformacion del efecto la duraciob debe ir en segundos (s)
+3 el tipo de funcion en este caso ease es despacio */
+.buscadorYBotones{
+    display: flex; /* Usa Flexbox para alinear los elementos en fila */
+    justify-content: space-between; /* Separa el contenido a la izquierda y a la derecha */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados con 8px */
+    font-family: 'Arial', sans-serif; /* Fuente */
+    margin: 0 auto;
+}
+
+
+.inputBuscarIzquierda{
+    display: flex;
+    align-items: end;   
+}
+
+#inputBuscar{
+    width: 220px;
+    margin: 0;
+}

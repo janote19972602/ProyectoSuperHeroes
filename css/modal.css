@@ -14,15 +14,21 @@
 
 .preguntaGeneral{
    background-color: rgb(146, 135, 186);
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
     margin-top: 5px;
 }
 
+.detallesDescripcion{
+    background-color: darkblue;
+    
+}
+
+
 .modal-overlay{
-    background:rgba(0, 0, 0, 0.3);
+     background:rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +46,7 @@
 }
 
 .modal-overlay p{
-    font-size: 5px;
+    font-size: inherit;
 }
 
 /* Oculta completamente el modal del flujo visual */
@@ -62,7 +68,7 @@
     max-height: 90vh;
     /* tamaño máximo en pantallas grandes */
     position: relative;
-    padding: 1.5rem;
+    padding:0;
     /* display: flex;
     flex-direction: column; */
     border-radius: 10px;
@@ -87,7 +93,7 @@
     background-color: firebrick;
 }
 .modal-box p{
-    font-size: 20px;
+    font-size: 14px;
 }
 
 /* "X" */
@@ -114,6 +120,11 @@
     margin: 0 auto;
     display: block;
     object-fit: cover;
+}
+
+.imagenPersonaje{
+    height: 50px;
+    background-color: #329457;
 }
 
 .tamaño{

@@ -7,6 +7,7 @@ export const multiverso = [
         poder: 'Armadura tecnológica', 
         nivel: 4,
         img: 'img/ironman2.png',
+        imgModal:'img/ironmanCabeza.png',
         descripcion:'Super inteligente, armaduras de lo mas cool y puro éxito',
         historiaOculta: 
         {
@@ -29,6 +30,7 @@ export const multiverso = [
         poder: 'Estratega e inteligencia superior', 
         nivel: 2,
         img: 'img/batman.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'un millonario que se dedica a combatir el crimen en Gotham City sin tener superpoderes, basándose en su intelecto, destreza física, entrenamiento de élite y tecnología avanzada',
         historiaOculta: 
         {
@@ -40,7 +42,7 @@ export const multiverso = [
                            'Clark Kent'
                           ],
             respuestaCorrecta: 'Bruce Wayne',
-            descripcionHistoriaOculta: 'Tony Stark, un genio multimillonario y filántropo, es secuestrado y forzado a construir armas. En cautiverio, utiliza su inteligencia para crear una armadura de alta tecnología y escapar. De regreso, se da cuenta de un complot global y jura proteger al mundo como Iron Man, utilizando su armadura para combatir el mal'
+            descripcionHistoriaOculta: 'Bruce Wayne es la identidad secreta del superhéroe vigilante Batman; un multimillonario, playboy y filántropo de Ciudad Gótica que, tras presenciar el asesinato de sus padres, juró vengar sus muertes'
         }
     },
     {
@@ -51,6 +53,7 @@ export const multiverso = [
         poder: 'Fuerza sobrehumana y vuelo', 
         nivel: 10, 
         img: 'img/supermann.png',
+        imgModal: 'img/su.png',
         descripcion:'Posee superfuerza, supervelocidad, invulnerabilidad, vuelo y visiones especiales como la de calor y rayos X',
         historiaOculta: 
         {
@@ -73,6 +76,7 @@ export const multiverso = [
         poder: 'Fuerza divina y lazo de la verdad', 
         nivel: 9, 
         img: 'img/mujerMaravillaa.png',
+        imgModal: 'img/mujerMaravillaaa.png',
         descripcion:' princesa guerrera amazona con superfuerza, velocidad y resistencia sobrehumanas.',
         historiaOculta: 
         {
@@ -95,6 +99,7 @@ export const multiverso = [
         poder: 'Dios del trueno y del rayo', 
         nivel: 10, 
         img: 'img/Thor-6-1-712x1024.png',
+        imgModal: 'img/thor.png',
         descripcion:'Dios nórdico del trueno y la tormenta, hijo de Odín, conocido por su inmensa fuerza, coraje y su martillo Mjölnir',
         historiaOculta: 
         {
@@ -117,6 +122,7 @@ export const multiverso = [
         poder: 'Magia y engaño', 
         nivel: 8, 
         img: 'img/lokii.png',
+        imgModal: 'img/loki.png',
         descripcion:'Dios nórdico de la travesura, astuto, engañoso y con la capacidad de cambiar de forma',
         historiaOculta: 
         {
@@ -139,6 +145,7 @@ export const multiverso = [
         poder: 'Guantelete del Infinito', 
         nivel: 10, 
         img: 'img/thanos-24-931x1024.png',
+        imgModal: 'img/thanos.png',
         descripcion:'Supervillano formidable de la raza de los Eternos, caracterizado por su inmenso poder, inteligencia y su obsesión con la muerte',
         historiaOculta: 
         {
@@ -161,6 +168,7 @@ export const multiverso = [
         poder: 'Agilidad y locura', 
         nivel: 7, 
         img: 'img/h.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Supervillana y anti-heroína de DC Comics, originalmente la psiquiatra Harleen Quinzel, que se enamora del Joker y se convierte en su cómplice',
         historiaOculta: 
         {
@@ -183,6 +191,7 @@ export const multiverso = [
         poder: 'Ingenio y caos', 
         nivel: 8, 
         img: 'img/joker.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Es un criminal psicópata icónico de DC Comics, conocido por su apariencia de payaso, cabello verde y una sonrisa permanente',
         historiaOculta: 
         {
@@ -205,6 +214,7 @@ export const multiverso = [
         poder: 'Sentido arácnido', 
         nivel: 8, 
         img: 'img/spi.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Un adolescente torpe y brillante que obtiene superpoderes arácnidos como caminar por las paredes, equilibrio perfecto tras ser mordido por una araña radioactiva',
         historiaOculta: 
         {
@@ -226,7 +236,8 @@ export const multiverso = [
         tipo: 'Héroe', 
         poder: 'Control del océano', 
         nivel: 3, 
-        img: 'img/aquaman.jpg',
+        img: 'img/aquaman3.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Un aventurero mitad humano y mitad atlante nacido de un farero y una reina de Atlantis',
         historiaOculta: 
         {
@@ -249,6 +260,7 @@ export const multiverso = [
         poder: 'Regeneración y combate', 
         nivel: 9, 
         img: 'img/deadpool.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Un mercenario con habilidades de regeneración mutantes tras un experimento que también lo desfigura y lo vuelve mentalmente inestable',
         historiaOculta: 
         {
@@ -271,6 +283,7 @@ export const multiverso = [
         poder: 'Agente de élite y sigilo', 
         nivel: 7, 
         img: 'img/black.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Es una ex-asesina y espía entrenada en el programa soviético de la "Habitación Roja" que, tras desertar, se une a S.H.I.E.L.D. y se convierte en una Vengadora',
         historiaOculta: 
         {
@@ -292,7 +305,8 @@ export const multiverso = [
         tipo: 'Villano', 
         poder: 'Sigilo y agilidad', 
         nivel: 4, 
-        img: 'img/Catwoman.jpg',
+        img: 'img/catwoman2.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Es una ladrona ágil y experta, conocida por su traje ajustado y su látigo, que opera en Gotham City',
         historiaOculta: 
         {
@@ -315,6 +329,7 @@ export const multiverso = [
         poder: 'Precisión con el arco', 
         nivel: 7, 
         img: 'img/hawkeye.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Es un arquero y ex-agente de S.H.I.E.L.D. que es miembro de los Vengadores',
         historiaOculta: 
         {
@@ -337,6 +352,7 @@ export const multiverso = [
         poder: 'Simbionte y fuerza bruta', 
         nivel: 9, 
         img: 'img/sw.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Simbionte alienígena amorfo que necesita un huésped humano para sobrevivir, otorgándole fuerza y agilidad sobrehumanas',
         historiaOculta: 
         {
@@ -359,6 +375,7 @@ export const multiverso = [
         poder: 'Anillo de poder', 
         nivel: 8, 
         img: 'img/lintera.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Es un superhéroe que puede usar su anillo en cualquier cosa y luchar hasta el final',
         historiaOculta: 
         {
@@ -380,7 +397,8 @@ export const multiverso = [
         tipo: 'Héroe', 
         poder: 'Energía cósmica', 
         nivel: 6, 
-        img: 'img/CaptainMarvel.jpg',
+        img: 'img/capitanamarvel.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Superfuerza, velocidad, resistencia, agilidad y durabilidad sobrehumanas, la capacidad de volar, y puede absorber y proyectar energía',
         historiaOculta: 
         {
@@ -403,6 +421,7 @@ export const multiverso = [
         poder: 'Fuerza divina y magia egipcia', 
         nivel: 9, 
         img: 'img/b.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Es un un villano y, en ocasiones, antihéroe, Posee una inmensa fuerza y velocidad, llegando a moverse tan rápido como el rayo',
         historiaOculta: 
         {
@@ -424,7 +443,8 @@ export const multiverso = [
         tipo: 'Héroe', 
         poder: 'Velocidad supersónica', 
         nivel: 3, 
-        img: 'img/Flash.jpg',
+        img: 'img/flash2.png',
+        imgModal: 'img/batmanModal.png',
         descripcion:'Famoso por su súper velocidad, que le permite moverse más rápido que la luz, además de tener reflejos sobrehumanos y la capacidad de atravesar la materia sólida',
         historiaOculta: 
         {

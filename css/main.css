@@ -3,34 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 
-transition tiene 3 valores. 
-1 a que funcion quiero aplicarle
-2 la duracion de la transformacion del efecto la duraciob debe ir en segundos (s)
-3 el tipo de funcion en este caso ease es despacio */
-
-/* //MENU CON EL INPUT un p que diga "buscar" */
-.buscadorYBotones{
-    display: flex; /* Usa Flexbox para alinear los elementos en fila */
-    justify-content: space-between; /* Separa el contenido a la izquierda y a la derecha */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados con 8px */
-    font-family: 'Arial', sans-serif; /* Fuente */
-    margin: 0 auto;
-}
-
-/* //INPUT BUSCAR*/
-.inputBuscarIzquierda{
-    display: flex;
-    align-items: end;
-}
-
-.inputBuscarIzquierda p {
-  margin: 0 10px 0 0; /* Margen a la derecha del texto "Buscar" */
-  font-weight: bold; /* Texto en negrita */
-  color: #333;
-}
 
 .mostrar{
     background-color: #329457; /* Color de fondo azul */
@@ -167,52 +139,102 @@ tamaño para crear múltiples columnas o filas. */
 /* PARA CELULAR */
 @media screen and (max-width:600px){
 
+  .contenedor-principal{
+      width: 100%;
+      padding: 10px;
+    }
+
+    /*BUSCADOR + BOTONES EN COLUMNA */
+    .buscadorYBotones{
+      flex-direction: column;
+      align-items: stretch;
+      gap: 15px;
+    }
+    
+    .inputBuscarIzquierda{
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    #inputBuscar{
+      width: 100%;
+    }
+
+
+    /* BOTONERA EN COLUMNA */
+    .BotonesMostrarDerecha{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .BotonesMostrarDerecha button{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* GRILLA */
+    #grillaSuperHeroesYVillanos{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     #grillaSuperHeroesYVillanos img{
         width: 100%;
         object-fit: fill;
         aspect-ratio: 3 / 4;
     }
 
+     /*TARJETAS*/
+    .tarjeta{
+      max-width: 100%;
+    }
+
+    .informacion-personaje h3{
+      font-size: 18px;
+    }
+
+    .informacion-personaje p{
+      font-size: 14px;
+    }
+
+    .informacion-personaje button{
+      font-size: 12px;
+    }
+    /*FIN TARJETAS*/
+
+    /*MODAL*/
+    .modal-box{
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 1rem;
+    }
+
+    .modal-box img{
+        max-width: 180px;
+        height: 100px;
+        object-fit: fill;
+    }
+
     .modal-box p{
-      font-size: 16px;
+      font-size: 14px;
     }
 
     .acordeon-titulo{
       font-size: 14px;
     }
 
+    #cerrarInformacionModal{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
     .mostrar{
       width: 100%;
     }
 
-    #inputBuscar{
-      width: 100%;
-      margin-left: 0;
-    }
 
-    .tarjeta{
-        text-align: center;
-        font-size: 30px;
-    }
 
-    .informacion-personaje h3{
-      font-size: 16px;
-    }
-
-    .informacion-personaje p{
-      font-size: 12px;
-    }
-
-    .informacion-personaje button{
-      font-size: 12px;
-    }
-
-    .BotonesMostrarDerecha{
-      display: flex;
-      flex-direction: column;
-      background-color: firebrick;
-      font-size: 50px;
-    }
 
 
 
