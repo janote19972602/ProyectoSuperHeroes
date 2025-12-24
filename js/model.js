@@ -7,7 +7,10 @@ export const multiverso = [
         poder: 'Armadura tecnológica', 
         nivel: 4,
         img: 'img/ironman2.png',
+
         imgModal:'img/ironmanCabeza.png',
+
+        imgModal: 'img/ironmanCabeza.png',
         descripcion:'Super inteligente, armaduras de lo mas cool y puro éxito',
         historiaOculta: 
         {
@@ -305,7 +308,7 @@ export const multiverso = [
         tipo: 'Villano', 
         poder: 'Sigilo y agilidad', 
         nivel: 4, 
-        img: 'img/catwoman.jpg',
+        img: 'img/catwoman2.png',
         imgModal: 'img/batmanModal.png',
         descripcion:'Es una ladrona ágil y experta, conocida por su traje ajustado y su látigo, que opera en Gotham City',
         historiaOculta: 

@@ -272,7 +272,7 @@ function mostrarVillanosYSuperHeroes(arregloPersonajes) {
                 //inicio de 4 valores que son llamados por id y mostrados por el modal
                 const imgPersonaje = document.getElementById('imagenPersonaje');
                 imgPersonaje.src = personaje.imgModal;
-                
+
                 const nombrePersonaje = document.getElementById('nombrePersonaje');
                 nombrePersonaje.textContent = personaje.nombre;
 
